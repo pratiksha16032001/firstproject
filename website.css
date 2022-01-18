@@ -1,0 +1,277 @@
+@import url('https:font.googleapis.com/css2?family=poppins');
+*{
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+body,html{
+	overflow-x: hidden;
+}
+ul{
+	list-style: none;
+}
+.active{
+	color: #fc036b;
+	text-decoration: underline;
+	font-weight: bold;
+}
+.navbar{
+	position: absolute;
+	top: 0;
+	left: 0;
+	display: flex;
+	width: 100px;
+	justify-content: space-between;
+	padding: 20px;
+	color: whitesmoke;
+}
+.nav-link{
+	display: flex;
+	margin-right: 30px;
+	align-items: right;
+	font-size: 30px;
+}
+.nav-link li{
+	margin: 0 30px;
+}
+header{
+	width: 100vw;
+	height: 100vh;
+	color: white;
+	background-image: url('./img/hill1.jpg');
+	background-position: bottom;
+	background-repeat: no-repeat;
+	background-size: cover;
+	display: flex;
+	align-items: flex-end;
+	justify-content: center;
+}
+a{
+	text-decoration: none;
+}
+.header-content{
+	margin-bottom: 150px;
+	color: whitesmoke;
+}
+.header-content h2{
+	font-size: 30px;
+}
+.line{
+	width: 300px;
+	height: 4px;
+	background: #fc036b;
+	margin: 10px auto;
+	border-radius: 5px;
+}
+.header-content h1{
+	font-size: 40px;
+	margin-top: 50px;
+	margin-bottom: 30px;
+}
+
+.menu-btn{
+	position: absolute;
+	top:30px;
+	right: 600px;
+	width: 40px;
+	cursor: pointer;
+}
+/* Events */
+
+section{
+	width: 80px;
+	height: 80px auto;
+}
+
+.title{
+	padding-left: 500px;
+	
+	font-size: 30px;
+	color: darkblue;
+}
+.row{
+	display: flex;
+	align-items: center;
+	width: 100px;
+	
+	text-align: justify;
+	margin-left: 350px;
+	
+}
+.row .col{
+	margin-left: 20px;
+}
+.row .col img{
+	width: 330px;
+	
+}
+.row .col1{
+	margin-left: 70px;
+}
+.row .col1 img{
+	/* margin-left: 100px; */
+	width: 330px;
+	height: 230px;
+}
+.btn{
+	height: 100px;
+	
+	text-align: center;
+	margin: 100px;
+	padding: 50px 50;
+	background:#fc036b;
+	/* border-radius: 30px; */
+	color: rgb(253, 242, 242);
+}
+.btn1{
+	height: 30px;
+	text-align: center;
+	margin: 100px;
+	padding: 50px 50;
+	background:#fc036b;
+	/* border-radius: 30px; */
+	color: rgb(253, 242, 242);
+}
+p{
+	color: black;
+	font-weight: bold;
+	font-size: 20px;
+}
+.explore{
+	width: 100%;
+	height: 80vh;
+	background-image: url('img/bground2.jpg');
+	background-position: center;
+	background-size: cover;
+	background-repeat: no-repeat;
+	display: flex;
+	align-items: center;
+}
+.explore1{
+	width: 50%;
+	padding: 70px;
+    color: whitesmoke;
+	display: flex;
+	align-items: center;
+	flex-direction: column;
+}
+.heading{
+	color: blue;
+	font-size: 50px;
+	margin: 50px;
+}
+/* .tours .image-gallery{
+	display: flex;
+	flex-wrap: wrap;
+	
+	align-items: center;
+}
+.image-gallery img{
+	width: 250px;
+	margin: 10px;
+}
+.tours .row .col{
+	width: 50%;
+}
+.content-col{
+	width: 40%;
+
+}
+.image-col{
+	width: 60%;
+}
+ */
+.div{
+	margin-right: 40px;
+	
+}
+.div h1{
+	color: darkslateblue;
+	font-size: 40px;
+	font-weight: bold;
+}
+.gallery{
+        width: 200px;
+		height: 230px;
+		display: inline-block;
+		border-radius: 10px;
+		padding: 15px 25px;
+		box-sizing: border-box;
+		cursor: pointer;
+		margin: 10px 15px;
+		display: flex;
+}
+table{
+	display: flex;
+}
+.footer {
+	width: 100%;
+	height: 200px;
+    padding: 20px 80px;
+	margin: 0;
+	background-color: #484872;
+	text-align: center;
+}
+.footer p{
+	color: whitesmoke;
+	margin: 20px auto;
+}
+@media only screen and (max-width:850px){
+	.menu-btn{
+		display: block;
+	}
+	.navbar{
+		padding: 0;
+	}
+	.logo{
+		position: absolute;
+		top:30px;
+		left: 30px;
+	}
+	.nav-links{
+		flex-direction: column;
+		width: 100%;
+		height: 100vh;
+		justify-content: center;
+		background-color: rgb(147, 97, 194);
+		margin-top: -900px;
+		transition: all 0.5s ease;
+	}
+	.mobile-menu{
+		margin-top: 0px;
+		border-bottom-right-radius: 30%;
+	}
+	.nav-links li{
+		margin: 30px auto;
+	}
+	.row{
+		flex-direction: column;
+	}
+	.row .col{
+		margin: 20px auto;
+	}
+    .col img{
+		max-width: 90%;
+	}
+	.explore1{
+		width: 100%;
+	}
+	.tours .col{
+		width: 100%;
+	}.image-gallery{
+		justify-content: center;
+		align-items: center;
+	}
+	.image-gallery img{
+		width: 90%;
+	}
+	.footer{
+		padding: 10px;
+	}
+}
+img{
+	transition: transform .3s ease;
+}
+img:hover{
+	transform: scale(1.1);
+}
